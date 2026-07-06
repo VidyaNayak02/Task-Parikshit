@@ -1,0 +1,35 @@
+.galleryheading {
+  text-align:center;
+  font-size:70px;
+  display:block;
+}
+
+.gallery {
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+
+
+.pic {
+    background-color:black;
+    border-color:white;
+    border-radius:10px;
+    width:350px;
+    margin-top:10px;
+    margin-left:10px;
+    
+  }     
+
+.img {
+  width:100%;
+  border-radius:10px;
+}
+
+.img:hover {
+  content:url(gallery_hover_image.jpg);
+  width:100%;
+  
+}

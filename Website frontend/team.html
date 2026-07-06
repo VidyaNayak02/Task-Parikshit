@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="backimage.css">
+
+    <style>
+        h1{
+            color:yellow;
+            font-size:70px;
+            text-align:center;
+        }
+
+        .gall{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            flex-wrap:wrap;
+        }
+
+        .imgg{
+            background-color:black;
+            border-radius:10px;
+            padding:10px;
+            width:300px;
+       
+        }
+
+        img{
+            width:100%;
+            border-radius:10px;
+        }
+
+        figcaption{
+            color:white;
+            margin-top:10px;
+            font-size:18px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Team</h1>
+
+    <div class="gall">
+
+        <div class="imgg">
+            <figure>
+                <img src="team_member_image_1.jpeg">
+                <figcaption>Design Engineer</figcaption>
+            </figure>
+        </div>
+
+        <div class="imgg">
+            <figure>
+                <img src="team_member_image_2.jpeg">
+                <figcaption>Full Stack Developer</figcaption>
+            </figure>
+        </div>
+
+        <div class="imgg">
+            <figure>
+                <img src="team_member_image_3.jpeg">
+                <figcaption>System Engineer</figcaption>
+            </figure>
+        </div>
+
+    </div>
+</body>
+</html>

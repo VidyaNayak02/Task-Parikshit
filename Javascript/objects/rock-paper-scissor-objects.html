@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <p>
+      Rock Paper Scissor
+    </p>
+    <button onclick="
+    
+    let move=  game();
+    let result1 ='';
+    if (move=='Rock')
+    {
+      result1='tie';
+      score.ties++;
+    }
+    else if (move=='Paper')
+    {
+      result1='You lose';
+      score.losses++;
+    }
+      else 
+    {
+      result1='You win';
+      score.wins++;
+    }
+    alert(`You picked Rock .Computer picked ${move}. ${result1}
+    Wins:${score.wins} Losses:${score.losses} Ties:${score.ties}`);
+    ">Rock</button>
+     <button onclick="
+
+    let move1=  game();
+    let result2 ='';
+   
+    if (move1=='Paper')
+    {
+      result2='tie';
+      score.ties++;
+    }
+    else if (move1=='Scissor')
+    {
+      result2='You lose';
+      score.losses++;
+    }
+      else 
+    {
+      result2='You win';
+      score.wins++;
+    }
+    alert(`You picked Paper .Computer picked ${move1}. ${result2}
+    Wins:${score.wins} Losses:${score.losses} Ties:${score.ties}`);
+    ">Paper</button>
+      <button onclick=" 
+    let move2=  game();
+    let result3 ='';
+    if (move2=='Scissor')
+    {
+      result3='tie';
+      score.ties++;
+    }
+    else if (move2=='Rock')
+    {
+      result3='You lose';
+      score.losses++;
+    }
+      else 
+    {
+      result3='You win';
+      score.wins++;
+    }
+    alert(`You picked Scissor .Computer picked ${move2}. ${result3}
+    Wins:${score.wins} Losses:${score.losses} Ties:${score.ties}`);
+    ">Scissors</button>
+    <button onclick="
+    score.wins=0;
+    score.losses=0;
+    score.ties=0;">Reset</button>
+    <script>
+      const score={
+        wins:0,
+        losses:0,
+        ties:0
+      }
+          function game()
+          {
+             const random = Math.random();
+             let move= '';
+            if(random>=0 && random<(1/3))
+          {
+            move='Rock';
+          }
+          else if(random>=(1/3)&& random<(2/3))
+          {
+            move='Paper';
+          }
+          else
+          {
+            move='Scissor';
+          }
+          return move;
+          }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <script>
+         const product={
+          name:'socks',
+          price:1090,
+         };
+         console.log(product);
+         console.log(product.name);
+         console.log(product.price);
+
+
+         product.name='cotton socks';
+         console.log(product);
+
+         product.newproperty=true;
+         console.log(product);
+
+         delete product.newproperty;
+         console.log(product);
+
+         const product2={
+          name:'shirt',
+         }
+         console.log(product2);
+         //bracket notation
+         console.log(product2['name']);
+         //delivery time does not exist so if we try to access using dot it gives error
+         console.log(product2.delivery_time);
+         //instead if you use bracket notation it will give undefined instead of error
+         console.log(product2['delivery_time']);
+
+         //object inside object is called nested objects
+         const product3={
+          name:'shirt',
+          rating:{
+            stars:5,
+            counts:10,
+          }
+         }
+         console.log(product3);
+         console.log(product3.rating);
+
+         //function inside object is called method
+          const product4={
+            name:'shirt',
+            rating:{
+              stars:5,
+              counts:10,
+            },
+            display:function(){
+              console.log('displaying product');
+            }
+          }
+          console.log(product4);
+          product4.display();
+          console.log(typeof console);
+          console.log(typeof console.log);
+
+          let a=JSON.stringfy(product4);
+          console.log(JSON .stringify(product4));
+          const jsonString=JSON.stringify(product4);
+
+          console.log(typeof a);
+          console.log(JSON.parse(a));
+    </script>
+  </body>
+</html>

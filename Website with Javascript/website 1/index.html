@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+  </head>
+  <body>
+    
+    <h1>Rock Paper Scissors </h1>
+    <h2><marquee>Can you outsmart the computer with just three choices?</marquee></h2>
+    <div class="container">
+      <div class="card">
+        <figure>
+        <img src="Image/Rock.png" alt="Rock">
+        <figcaption>Rock</figcaption>
+        </figure>
+        <button onclick="
+        let move=computerMove();
+        Rock(move);">Click</button>
+        </div>
+
+        <div class="card">
+          <figure>
+            <img src="Image/Paper.png" alt="Paper">
+            <figcaption>Paper</figcaption>
+          </figure>
+          <button onclick="let move1=computerMove();
+        Paper(move1);">Click</button>
+        </div>
+
+        <div class="card">
+          <figure>
+            <img src="Image/Scissor.png" alt="Scissor">
+            <figcaption>Scissor</figcaption>
+          </figure>
+          <button onclick="let move2=computerMove();
+        Scissor(move2);">Click</button>
+        </div>
+
+        <div class="card">
+          <figure>
+            <img src="Image/reset.png" alt="Scissor">
+            <figcaption>Scissor</figcaption>
+          </figure>
+          <button onclick="
+          reset();">Click</button>
+        </div>
+    </div>
+    <script src="JS/java.js"></script>
+  </body>
+</html>

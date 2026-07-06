@@ -1,0 +1,15 @@
+  h1 {
+                font-size:70px;
+                font-family:Arial;
+                font-style:italic;
+                color:white;
+                text-align:center;
+            }
+            span {
+                color:yellow;
+            }
+            h3 {
+                color:white;
+             font-size:50px;
+
+            }

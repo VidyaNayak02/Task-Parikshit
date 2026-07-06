@@ -1,0 +1,37 @@
+.cards{
+    display:flex;
+    gap:30px;
+     flex-wrap:wrap;
+      justify-content:center;
+      
+     
+}
+.subsystem {
+                    width:350px;
+    background:black;
+    border-radius:15px;
+    padding:10px;
+    margin-left:10px;
+    color:white;
+}
+.buttons {
+    color:peru;
+    background-color:yellow;
+    border-color:yellow;
+    border-radius:10px;
+    width:100px;
+    height:20px;
+    margin:auto;
+    text-align:center;
+        display:block;
+
+}
+.image{
+    width:100%;
+    border-radius:10px;
+}
+figcaption {
+    text-align:center;
+    margin-top:10px;
+    font-size:20px;
+}

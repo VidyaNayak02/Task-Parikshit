@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <p>
+      Rock Paper Scissor
+    </p>
+   <button onclick="
+   let move=computerMove();
+   result=humanRock(move);
+   alert(`You choose Rock. Computer choose ${move} ${result}
+   Wins: ${score.wins} Losses:${score.losses} Ties:${score.ties}`);
+   ">Rock</button> 
+   <button onclick="
+    let move1=computerMove();
+   let  result1=humanPaper(move1);
+   alert(`You choose Paper. Computer choose ${move1} ${result1}
+    Wins: ${score.wins} Losses:${score.losses} Ties:${score.ties}`);"
+   >Paper</button>
+   <button onclick="
+    let move2=computerMove();
+   let  result2=humanScissor(move2);
+   alert(`You choose Scissor. Computer choose ${move2} ${result2}
+    Wins: ${score.wins} Losses:${score.losses} Ties:${score.ties}`);">Scissor</button>
+   <script>
+    let score = JSON.parse(localStorage.getItem('score')) || {
+  wins: 0,
+  losses: 0,
+  ties: 0
+};
+    function computerMove()
+    {
+      const random=Math.random();
+      let move='';
+      if(random>=0 && random<(1/3))
+    {
+           move='Rock';
+    }
+    else if(random>=(1/3) && random<(2/3))
+    {
+      move='Paper';
+    }
+    else {
+      move='Scissor';
+    }
+    return move;
+    }
+    function humanRock(move)
+    {
+      let result='';
+      if(move==='Rock')
+    {
+      result='Tie';
+      score.ties++;
+    }
+    else if(move==='Paper')
+    {
+      result='You lose';
+       score.losses++;
+    }
+    else {
+      result='You win';
+      score.wins++;
+    }
+        localStorage.setItem('score',JSON.stringify(score));
+        return result;
+    }
+     function humanPaper(move)
+    {
+      let result='';
+      if(move==='Rock')
+    {
+      result='You win';
+      score.wins++;
+    }
+    else if(move==='Paper')
+    {
+      result='Tie';
+      score.ties++;
+    }
+    else {
+      result='You lose';
+      score.losses++;
+    }
+        localStorage.setItem('score',JSON.stringify(score));
+        return result;
+  }
+
+     function humanScissor(move)
+    {
+      let result='';
+      if(move==='Rock')
+    {
+      result='You lose';
+      score.losses++;
+    }
+    else if(move==='Paper')
+    {
+      result='You win';
+      score.wins++;
+    }
+    else {
+      result='Tie';
+      score.ties++;
+    }
+        localStorage.setItem('score',JSON.stringify(score));
+    return result;
+    }
+   </script>
+  </body>
+</html>

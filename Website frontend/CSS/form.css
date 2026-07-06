@@ -1,0 +1,23 @@
+.formbutton {
+       background-color:yellow;
+       color:peru;
+       border-radius:10px;
+       width:100px;
+       height:70px;
+       padding:15px;
+       
+
+}
+.formheading {
+   color:darkblue;
+   font-size:30px;
+  display:block;
+   text-align:center;
+   font-weight:bold;
+   
+}
+.formmain {
+  display:flex;
+  justify-content:center;
+  
+}
